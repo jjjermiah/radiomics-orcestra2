@@ -1,0 +1,20 @@
+show-failed-logs: True
+keep-going: True
+# keep-incomplete: True
+rerun-triggers: "mtime"
+rerun-incomplete: True
+printshellcmds: True 
+use-conda: True
+use-singularity: True
+container-image: "bhklab/snakemake8_radiomics-orcestra:v0.1"
+# retries: 3
+# default-remote-provider: "GS"
+# default-remote-prefix: "orcestradata/radiomics-orcestra"
+default-storage-provider: "gcs"
+default-storage-prefix: "gs://radiomics-orcestra/radiomics-orcestra"
+# storage-gcs-keep-local: True
+
+executor: "kubernetes"
+
+# When running on Kubernetes
+jobs: 256

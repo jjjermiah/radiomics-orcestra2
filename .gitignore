@@ -1,0 +1,27 @@
+# pixi environments
+.pixi
+*.egg-info
+
+.env
+
+.snakemake
+
+metadata
+rawdata
+procdata
+results
+.old
+.pixi_old
+
+sandbox
+
+logs
+
+trash
+
+.vscode
+.config
+.cache
+www.cancerimagingarchive.net
+
+**/*.RData
